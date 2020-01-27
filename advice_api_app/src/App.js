@@ -21,8 +21,8 @@ function App() {
   return (
     <div>
       <Header />
-      <AdviceResult getAdvice={getAdvice} />
-      <ButtonFetch generateAdvice={generateAdvice} />
+      <AdviceResult getAdvice={getAdvice} generateAdvice={generateAdvice} />
+      {/* <ButtonFetch generateAdvice={generateAdvice} /> */}
     </div>
   );
 }
