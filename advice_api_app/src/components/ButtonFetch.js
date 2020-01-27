@@ -1,4 +1,6 @@
 import React from 'react';
+import Button from '@material-ui/core/Button';
+
 
 function ButtonFetch(props) {
   // store params in another variable
@@ -6,7 +8,9 @@ function ButtonFetch(props) {
 
   return (
     <div>
-      <button onClick={generateAdvice}>Receive Advice</button>
+      <Button variant="contained" color="primary" onClick={generateAdvice}>
+        Receive Advice
+      </Button>
     </div>
   );
 }
