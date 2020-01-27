@@ -1,14 +1,12 @@
 import React from 'react';
 
-function ButtonFetch() {
-  // store base fetch url in a variable
-  // store parms in another varibale
-  //use interperulation to join the two
+function ButtonFetch(props) {
+  // store params in another variable
+  const generateAdvice = props.generateAdvice;
 
-  //build function that fetches information
   return (
     <div>
-      <button>Receive Advice</button>
+      <button onClick={generateAdvice}>Receive Advice</button>
     </div>
   );
 }
