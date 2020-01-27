@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import { Route, Switch } from 'react-router-dom';
 import './index.css';
 import Header from './components/Header';
 import AdviceResult from './components/AdviceResult';
-import ButtonFetch from './components/ButtonFetch';
+import Home from './components/Home';
 import Axios from 'axios';
 
 function App() {
@@ -20,9 +21,22 @@ function App() {
   console.log(getAdvice.advice);
   return (
     <div>
-      <Header />
-      <AdviceResult getAdvice={getAdvice} generateAdvice={generateAdvice} />
-      {/* <ButtonFetch generateAdvice={generateAdvice} /> */}
+      <main>
+        <Header />
+        {/* <AdviceResult getAdvice={getAdvice} generateAdvice={generateAdvice} /> */}
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route
+            path="/advice"
+            render={() => (
+              <AdviceResult
+                getAdvice={getAdvice}
+                generateAdvice={generateAdvice}
+              />
+            )}
+          />
+        </Switch>
+      </main>
     </div>
   );
 }

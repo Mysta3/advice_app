@@ -28,7 +28,7 @@ function AdviceResult(props) {
 
   return (
     <Card className={classes.card}>
-      <h2 className={classes.header}>Today's Advice</h2>
+      {advice && <h3 className={classes.header}>Today's Advice</h3>}
       <CardContent className={classes.cardContent}>
         {advice && <h3>Tip #{adviceID}</h3>}
         <p>{advice}</p>

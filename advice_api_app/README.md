@@ -18,7 +18,7 @@ As a user, I want to be able to click a button and see a random piece of advice.
 ### Stretch Goals
 
 As a user, I want to be able to click a button and see a random piece of advice.
-As a user, I want to be able to search a term and receive advice pertaining to that keyword.
+As a user, I want to be able to pick a keyword and receive advice pertaining to that keyword.
 As a user, I want to be able to control how many pieces of advice I see when searching a keyword.
 As a user, I want to be able to
 
@@ -33,3 +33,7 @@ My API of choice for this project will be [Advice Slip JSON API](https://api.adv
 #### OPTIONAL:
 
 In the above hierarchy for the MVP, the parent component (App) will hold the state and the props will be passed to the child components (results) which will be rendered to the page.
+
+## References:
+
+- https://stackoverflow.com/questions/37669391/how-to-get-rid-of-underline-for-link-component-of-react-router
