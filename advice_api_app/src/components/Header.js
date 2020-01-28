@@ -7,9 +7,11 @@ const useStyles = makeStyles({
     marginTop: '0',
     background: '#F7F7F7',
     color: 'black',
-    fontFamily: 'cursive',
+    fontFamily: 'Copperplate, Arial',
     fontSize: '4rem',
-    textShadow: '1px 1px 3px grey'
+    fontWeight: 'lighter',
+    textShadow: '1px 1px 3px grey',
+    padding: '1%'
   }
 });
 

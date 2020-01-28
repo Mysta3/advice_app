@@ -18,12 +18,11 @@ function App() {
     });
   };
 
-  console.log(getAdvice.advice);
   return (
     <div>
       <main>
         <Header />
-        {/* <AdviceResult getAdvice={getAdvice} generateAdvice={generateAdvice} /> */}
+
         <Switch>
           <Route exact path="/" component={Home} />
           <Route
