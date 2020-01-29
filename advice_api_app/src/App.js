@@ -7,22 +7,23 @@ import Home from './components/Home';
 import Axios from 'axios';
 
 function App() {
-  const [getAdvice, setAdvice] = useState({});
+  const [getAdvice, setAdvice] = useState({}); //Api props
 
   //build function that fetches information
   const generateAdvice = () => {
     const rootUrl = 'https://api.adviceslip.com/advice'; // store base fetch url in a variable
     Axios.get(rootUrl).then(response => {
       setAdvice(response.data.slip);
-      console.log(response.data.slip.slip_id);
     });
   };
 
   return (
     <div>
-      <main>
+      <header>
         <Header />
+      </header>
 
+      <main>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route
