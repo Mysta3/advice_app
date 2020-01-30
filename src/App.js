@@ -5,9 +5,18 @@ import Header from './components/Header';
 import AdviceResult from './components/AdviceResult';
 import Home from './components/Home';
 import Axios from 'axios';
+import { makeStyles } from '@material-ui/core/styles';
+const useStyles = makeStyles({
+  footer: {
+    marginTop: '40vh',
+    color: 'white',
+    fontWeight: 'bold'
+  }
+});
 
 function App() {
   const [getAdvice, setAdvice] = useState({}); //Api props
+  const classes = useStyles();
 
   //build function that fetches information
   const generateAdvice = () => {
@@ -25,7 +34,8 @@ function App() {
 
       <main>
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" component={Home} />{' '}
+          {/* Renders Home component */}
           <Route
             path="/advice"
             render={() => (
@@ -34,9 +44,13 @@ function App() {
                 generateAdvice={generateAdvice}
               />
             )}
-          />
+          />{' '}
+          {/* Renders Advice Results component while passing setters & getters props. */}
         </Switch>
       </main>
+      <footer className={classes.footer}>
+        Developed By: Mysta3 - Personal Advice Assistant - 2020.
+      </footer>
     </div>
   );
 }

@@ -19,7 +19,7 @@ const useStyles = makeStyles({
   }
 });
 
-let userName;
+let userName = 'User';
 
 function Home() {
   const classes = useStyles();
@@ -69,7 +69,8 @@ function Home() {
         </DialogActions>
       </Dialog>
       {/* DIALOG MODAL BOX END */}
-      {name && <h2>Welcome, {name} </h2>}
+
+      {name && <h2>Welcome, {name || 'User'} </h2>}
       <h3 className="homeParagraph">To Your Personal Advice Assistant</h3>
       <Link className={classes.a} to="/advice">
         <Button
