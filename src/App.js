@@ -49,7 +49,7 @@ function App() {
         </Switch>
       </main>
       <footer className={classes.footer}>
-        Developed By: Mysta3 - Personal Advice Assistant - 2020.
+        Developed By: MYSTA3 - Personal Advice Assistant - 2020.
       </footer>
     </div>
   );
