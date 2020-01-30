@@ -5,8 +5,8 @@ import { makeStyles } from '@material-ui/core/styles';
 function ButtonFetch(props) {
   //Material UI styling components
   const useStyles = makeStyles({
-    button:{
-      margin: '2%'
+    button: {
+      margin: '8% 2%'
     }
   });
   // store params in another variable
@@ -14,7 +14,12 @@ function ButtonFetch(props) {
   const classes = useStyles(); //applies styles to variable
   return (
     <div>
-      <Button className={classes.button} variant="contained" color="primary" onClick={generateAdvice}>
+      <Button
+        className={classes.button}
+        variant="contained"
+        color="primary"
+        onClick={generateAdvice}
+      >
         Receive Advice
       </Button>
     </div>

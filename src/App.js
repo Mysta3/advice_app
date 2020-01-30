@@ -13,7 +13,7 @@ function App() {
   const generateAdvice = () => {
     const rootUrl = 'https://api.adviceslip.com/advice'; // store base fetch url in a variable
     Axios.get(rootUrl).then(response => {
-      setAdvice(response.data.slip);
+      setAdvice(response.data.slip); //set data to getAdvice variable
     });
   };
 
