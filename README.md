@@ -1,39 +1,49 @@
-# Project Proposal
+# Advice Assistant App
 
----
-
-## Project Description
+## Description
 
 For the advice lovers & guidance seekers. This application is used to receive a piece of advice to get you through the day or even supply that "pick me up" you may need to get through a troubling time or maybe you just like using advice quotes in your instagram pictures!
 
-## Wireframes
+![Advice App in Browser](https://i.imgur.com/GyFiNKA.png)
 
-![App initial state](https://i.imgur.com/w0lfOnG.png)
-![App end result state](https://i.imgur.com/N4aHuQj.png)
+## Technologies Used
 
-### MVP User Stories
+- Reactjs + Hooks
+- React Router
+- Axios
+- MaterialUI
+- Jest/Enzyme
 
-As a user, I want to be able to click a button and see a random piece of advice.
+## Getting Started/Installation Instructions
 
-### Stretch Goals
+1. Fork & clone ths repo.
+2. Install the necessary dependencies.
 
-As a user, I want to be able to click a button and see a random piece of advice.
-As a user, I want to be able to pick a keyword and receive advice pertaining to that keyword.
-As a user, I want to be able to control how many pieces of advice I see when searching a keyword.
-As a user, I want to be able to
+- react-router, axios, @material-ui/core.
 
-## API
+3. Enter npm run start in terminal.
 
-My API of choice for this project will be [Advice Slip JSON API](https://api.adviceslip.com/#object-slip)
+## Contribution Guidelines
 
-## Component Hierarchy
+#### In order to contribute I ask the following things:
 
-![Component Hierarchy](https://i.imgur.com/ho40yzo.png)
+1. Fork & Clone this repo first.
+2. Do your best to keep the current coding style:
 
-#### OPTIONAL:
+- 2 spaces for indentation instead of tabs.
+- Reactjs conventional naming patterns.
 
-In the above hierarchy for the MVP, the parent component (App) will hold the state and the props will be passed to the child components (results) which will be rendered to the page.
+3. Submit a pull request to this current repo with the following information:
 
-## References:
+- Your name
+- A link to your github repository
+- An image of the app showing what functionality/ styling you added if the change or improvement was front-facing else a code snippet explaining your enhancement & why it's beneficial.
 
-- https://stackoverflow.com/questions/37669391/how-to-get-rid-of-underline-for-link-component-of-react-router
+4. Merges will happen upon approval.
+
+### References
+
+- Main Repo: https://github.com/Mysta3/advice_app
+- MaterialUI: https://material-ui.com/
+- Advice Api: https://api.adviceslip.com/
+- The contribution section of this document was adapted from https://gist.github.com/briandk/3d2e8b3ec8daf5a27a62
