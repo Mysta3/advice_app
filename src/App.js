@@ -5,6 +5,8 @@ import Header from './components/Header';
 import AdviceResult from './components/AdviceResult';
 import Home from './components/Home';
 import Axios from 'axios';
+
+
 import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles({
   footer: {
@@ -49,7 +51,7 @@ function App() {
         </Switch>
       </main>
       <footer className={classes.footer}>
-        Developed By: MYSTA3 - Personal Advice Assistant - 2020.
+        Developed By: MYSTA3 - Personal Advice App - 2020.
       </footer>
     </div>
   );

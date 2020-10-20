@@ -24,8 +24,7 @@ const useStyles = makeStyles({
 function AdviceResult(props) {
   const classes = useStyles(); //applies styles to variable
   const advice = props.getAdvice.advice; //advice content
-  const adviceID = props.getAdvice.slip_id; //advice ID
-
+  const adviceID = props.getAdvice.id; //advice ID
   return (
     <Card className={classes.card}>
       {advice && <h3 className={classes.header}>Today's Advice</h3>}
