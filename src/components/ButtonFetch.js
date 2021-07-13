@@ -20,7 +20,7 @@ function ButtonFetch(props) {
         color="primary"
         onClick={generateAdvice}
       >
-        Receive Advice
+        Generate Advice
       </Button>
     </div>
   );

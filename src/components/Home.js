@@ -19,7 +19,7 @@ const useStyles = makeStyles({
   }
 });
 
-let userName = 'User';
+let userName = '';
 
 function Home() {
   const classes = useStyles();
@@ -28,14 +28,14 @@ function Home() {
   const [name, setName] = useState();
 
   useEffect(() => {
+    
     setOpen(true);
   }, []);
 
   const handleChange = event => {
     userName = event.target.value;
-
-    console.log(name);
   };
+
   const handleClose = () => {
     setOpen(false);
     setName(userName);
