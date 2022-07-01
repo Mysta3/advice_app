@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import './index.css';
 import Header from './components/Header';
 import AdviceResult from './components/AdviceResult';
@@ -20,7 +20,7 @@ function App() {
   const [getAdvice, setAdvice] = useState({}); //Api props
   const classes = useStyles();
 
-  //build function that fetches information
+  //api call
   const generateAdvice = () => {
     const rootUrl = 'https://api.adviceslip.com/advice'; // store base fetch url in a variable
     Axios.get(rootUrl).then(response => {
@@ -35,9 +35,8 @@ function App() {
       </header>
 
       <main>
-        <Switch>
-          <Route exact path="/" component={Home} />{' '}
-          {/* Renders Home component */}
+        <Routes>
+          <Route path="/" element={<Home/>} />{' '}
           <Route
             path="/advice"
             render={() => (
@@ -48,7 +47,7 @@ function App() {
             )}
           />{' '}
           {/* Renders Advice Results component while passing setters & getters props. */}
-        </Switch>
+        </Routes>
       </main>
       <footer className={classes.footer}>
         Developed By: MYSTA3 - Personal Advice App - 2020.
